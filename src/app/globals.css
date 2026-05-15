@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --wpu-navy: #0f172a;
@@ -8,12 +6,17 @@
   --wpu-bg: #f0f9ff;
 }
 
+@theme {
+  --color-wpu-navy: var(--wpu-navy);
+  --color-wpu-blue: var(--wpu-blue);
+  --color-wpu-bg: var(--wpu-bg);
+}
+
 body {
   background-color: var(--wpu-bg);
   color: #334155;
   overflow-x: hidden;
-  /* Font sans-serif seperti kakalif.my.id */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: sans-serif;
 }
 
 /* Scrollbar Style Kubuntu */
